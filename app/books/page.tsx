@@ -66,19 +66,19 @@ export default async function BooksPage() {
         "@type": "ListItem",
         position: 1,
         name: "หน้าหลัก",
-        item: "https://josxgopufsxu6xwmwwtyfdpdka.srv.us",
+        item: "https://seo-best-practices.vercel.app",
       },
       {
         "@type": "ListItem",
         position: 2, // ขยับมาเป็นเบอร์ 2
         name: "คู่มือ SEO",
-        item: "https://josxgopufsxu6xwmwwtyfdpdka.srv.us/seo-guide",
+        item: "https://seo-best-practices.vercel.app/seo-guide",
       },
       {
         "@type": "ListItem",
         position: 3, // ขยับมาเป็นเบอร์ 3
         name: "หนังสือ Harry Potter",
-        item: "https://josxgopufsxu6xwmwwtyfdpdka.srv.us/books",
+        item: "https://seo-best-practices.vercel.app/books",
       },
     ],
   };

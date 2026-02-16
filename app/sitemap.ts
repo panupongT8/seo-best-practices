@@ -3,8 +3,7 @@ import { MetadataRoute } from "next";
 // 1. แนะนำให้ใช้ Environment Variable แทนการ Hardcode (เผื่อเปลี่ยนโดเมนในอนาคต)
 // ถ้าไม่มี .env ให้ใช้ค่า Default ด้านหลังแทน
 const BASE_URL =
-  process.env.NEXT_PUBLIC_BASE_URL ||
-  "https://josxgopufsxu6xwmwwtyfdpdka.srv.us";
+  process.env.NEXT_PUBLIC_BASE_URL || "https://seo-best-practices.vercel.app";
 
 // จำลองการดึงข้อมูลจาก Database (ในงานจริงให้เรียก API หรือ Query DB ตรงนี้)
 async function getBlogPosts() {

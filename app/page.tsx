@@ -22,11 +22,11 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "My SEO Website",
-    url: "https://josxgopufsxu6xwmwwtyfdpdka.srv.us",
+    url: "https://seo-best-practices.vercel.app",
     potentialAction: {
       "@type": "SearchAction",
       target:
-        "https://josxgopufsxu6xwmwwtyfdpdka.srv.us/search?q={search_term_string}",
+        "https://seo-best-practices.vercel.app/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };

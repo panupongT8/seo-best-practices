@@ -463,19 +463,19 @@
 //         "@type": "ListItem",
 //         position: 1,
 //         name: "หน้าหลัก",
-//         item: "https://josxgopufsxu6xwmwwtyfdpdka.srv.us",
+//         item: "https://seo-best-practices.vercel.app",
 //       },
 //       {
 //         "@type": "ListItem",
 //         position: 2,
 //         name: "คู่มือ SEO",
-//         item: "https://josxgopufsxu6xwmwwtyfdpdka.srv.us/seo-guide",
+//         item: "https://seo-best-practices.vercel.app/seo-guide",
 //       },
 //       {
 //         "@type": "ListItem",
 //         position: 3,
 //         name: "คู่มือ WCAG",
-//         item: "https://josxgopufsxu6xwmwwtyfdpdka.srv.us/wcag-guide",
+//         item: "https://seo-best-practices.vercel.app/wcag-guide",
 //       },
 //     ],
 //   };
@@ -700,7 +700,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "คู่มือ WCAG 2.1 ฉบับนักพัฒนา (A/AA Checklist)",
     description: "รวมวิธีเขียนโค้ดให้ผ่านเกณฑ์ WCAG ครบทุกข้อ จบในที่เดียว",
-    url: "https://josxgopufsxu6xwmwwtyfdpdka.srv.us/wcag-guide",
+    url: "https://seo-best-practices.vercel.app/wcag-guide",
     siteName: "My SEO & Accessibility Guide",
     images: [
       {
@@ -773,19 +773,19 @@ export default function WcagGuidePage() {
         "@type": "ListItem",
         position: 1,
         name: "หน้าหลัก",
-        item: "https://josxgopufsxu6xwmwwtyfdpdka.srv.us",
+        item: "https://seo-best-practices.vercel.app",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "คู่มือ SEO",
-        item: "https://josxgopufsxu6xwmwwtyfdpdka.srv.us/seo-guide",
+        item: "https://seo-best-practices.vercel.app/seo-guide",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "คู่มือ WCAG",
-        item: "https://josxgopufsxu6xwmwwtyfdpdka.srv.us/wcag-guide",
+        item: "https://seo-best-practices.vercel.app/wcag-guide",
       },
     ],
   };

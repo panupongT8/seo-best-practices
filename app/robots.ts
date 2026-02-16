@@ -2,8 +2,7 @@ import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
   const BASE_URL =
-    process.env.NEXT_PUBLIC_BASE_URL ||
-    "https://josxgopufsxu6xwmwwtyfdpdka.srv.us";
+    process.env.NEXT_PUBLIC_BASE_URL || "https://seo-best-practices.vercel.app";
 
   return {
     rules: {

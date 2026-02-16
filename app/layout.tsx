@@ -26,9 +26,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   description: "เว็บไซต์สอนทำ google seo อันดับ 1",
   verification: {
-    google: "RmCx7xoRdxfTWzP-exLwTXyXaC7SU-51tNpGjiRfmtk",
+    google: "l2AXrp0hiSVwfv9Jq5IWqt7-P1j6W1YUDTbGX2rMQN4",
   },
-  metadataBase: new URL("https://josxgopufsxu6xwmwwtyfdpdka.srv.us"),
+  metadataBase: new URL("https://seo-best-practices.vercel.app"),
   title: {
     default: "ชื่อเว็บหลัก",
     template: "%s | ชื่อเว็บหลัก",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ชื่อเว็บหลัก",
     description: "เว็บไซต์สอนทำ google seo อันดับ 1",
-    url: "https://josxgopufsxu6xwmwwtyfdpdka.srv.us",
+    url: "https://seo-best-practices.vercel.app",
     siteName: "ชื่อเว็บหลัก",
     locale: "th_TH",
     type: "website",
