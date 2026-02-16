@@ -496,7 +496,7 @@ export default function BlogPost({ params }) {
                 desc: "สำคัญที่สุด! รู้ว่ามีคนกดปุ่ม 'สั่งซื้อ' หรือ 'ติดต่อเรา' กี่คน",
               },
             ].map((item, index) => (
-              <Grid item xs={12} sm={6} key={index}>
+              <Grid size={{ xs: 12, sm: 6 }} key={index}>
                 <Paper
                   variant="outlined"
                   sx={{ p: 2, height: "100%", bgcolor: "#f8f9fa" }}
