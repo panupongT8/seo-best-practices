@@ -1,0 +1,22 @@
+generator client {
+  provider               = "prisma-client"
+  output                 = "../src/generated/prisma"
+  generatedFileExtension = "ts"
+  importFileExtension    = ""  // Empty string for bare imports (no extension)
+  moduleFormat           = "esm"
+  runtime                = "nodejs"  // Explicit for Node.js/Next.js compatibility
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Movie {
+  id          Int      @id @default(autoincrement())
+  title       String
+  posterUrl   String
+  bgUrl       String?
+  description String
+  rating      Float?   @default(0)
+  createdAt   DateTime @default(now())
+}

@@ -15,6 +15,18 @@ async function getBlogPosts() {
   ];
 }
 
+const convertToSlug = (text: string) => {
+  return text
+    .toString()
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/[^\w-]+/g, "")
+    .replace(/--+/g, "-")
+    .replace(/^-+/, "")
+    .replace(/-+$/, "");
+};
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // 1. ดึงข้อมูลบทความ (Dynamic)
   const posts = await getBlogPosts();
@@ -55,6 +67,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
   ];
 
+  const res = await fetch("https://potterapi-fedeperin.vercel.app/en/books");
+  const books = await res.json();
+
+  const bookUrls = books.map((book: any) => ({
+    url: `${BASE_URL}/books/${book.number}-${convertToSlug(book.title)}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  // --- 2. หน้าหลักของหนังสือ ---
+  const booksIndex = {
+    url: `${BASE_URL}/books`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  };
+
   // 4. รวมข้อมูลทั้งหมดเข้าด้วยกัน
-  return [...staticRoutes, ...blogUrls];
+  return [...staticRoutes, booksIndex, ...bookUrls, ...blogUrls];
 }
